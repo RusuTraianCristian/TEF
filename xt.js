@@ -56,7 +56,10 @@ window.Twitch.ext.bits.getProducts().then(function(products) {
 
 window.Twitch.ext.bits.getProducts().then(function(products) {
     // wrap within a function and call function with different id arguments to call the use of a different product
-    console.log(products);
     let productSku = products[id].sku;
     Twitch.ext.bits.useBits(productSku);
+});
+
+window.Twitch.ext.bits.onTransactionComplete(TransactionObject => {
+    // TransactionObject contains all the info related to a specific transaction
 });
