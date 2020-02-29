@@ -22,7 +22,7 @@ async function twitchFetch(url) {
         const response = await fetch(url, options);
         const data = await response.json();
         return data;
-    }ss
+    }
 
     catch (err) {
         console.error(err);
