@@ -4,7 +4,7 @@ const TWITCH_CLIENT_ID = "extensionClientId";
 const TWITCH_SECRET = "extensionSecret";
 const CALLBACK_URL = "callbackUrl";
 
-// a fetch function to query data from Twitch API
+// fetch function to query data from Twitch API
 
 async function twitchFetch(url) {
     const headers = new Headers({
